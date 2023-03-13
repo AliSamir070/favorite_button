@@ -128,7 +128,7 @@ class _FavoriteButtonState extends State<FavoriteButton>
             });
           },
           child: Icon(
-            (Icons.favorite),
+            (_isFavorite?Icons.favorite_rounded:Icons.favorite_border_rounded),
             color: _colorAnimation.value,
             size: _sizeAnimation.value,
           ),
